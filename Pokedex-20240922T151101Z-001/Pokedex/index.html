@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page">
+        <!-- logo -->
+        <header>
+            <div class="header">
+                <img src="image/pokdex-high-resolution-logo-transparent.png" alt="Pokedex logo" class="logo"/>
+            </div>
+        </header>
+
+        <!-- Search -->
+        <nav>
+            <div class="search">
+                <img src="image/search.png" alt="Search icon"  class="searchIcon" />
+                <input type="text" name="searchInput" placeholder="Pokemon name, number or type" id="inputSearch"/>
+                <button class="searchButton" id="buttonSearch">Search</button>
+            </div>
+
+            <div class="filters">
+                <select id="dropdown">
+                    <option value="lowest">Lowest number first</option>
+                    <option value="highest">Highest number first</option>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+                <button class="buttonFilter"><img src="image/sort.png" alt="filtersIcon" class="filterIcon"/>Filters</button>
+            </div>
+        </nav>
+
+        <!-- List of Pokemons -->
+        <main>
+            <div id="demoA" class="tabs">
+                
+                <input id="rOne" type="radio" name="tabs" checked>
+                <input id="rTwo" type="radio" name="tabs">
+
+                
+                <label id="nOne" for="rOne" class="tNav">All Pokemons</label>
+                <label id="nTwo" for="rTwo" class="tNav">Captured Pokemons</label>
+
+                
+                <div id="sOne" class="tSec"><div class="pokemons"></div></div>
+                <div id="sTwo" class="tSec"><div class="capPokemons"></div></div>
+            </div>
+            
+        </main>
+
+        <!-- List of Details -->
+        <div class="modal">
+            
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
